@@ -1,0 +1,56 @@
+.main_hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+.hero,
+.hero_moto {
+    width: 95%;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.5s ease, box-shadow 0.5s ease; /* Apply transition for smooth hover effect */
+}
+
+.hero:hover,
+.hero_moto:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add box-shadow on hover */
+    width: 98%; /* Increase width on hover for scaling effect */
+}
+
+.hero {
+    background-image: url('../assest/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    flex-direction: column; /* Adjust flex-direction if needed */
+}
+
+.hero_moto {
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+}
+
+
+.hero_moto_container {
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.5em;
+}

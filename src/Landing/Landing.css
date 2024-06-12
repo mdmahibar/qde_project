@@ -1,0 +1,25 @@
+/* .landing_founders h1 {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 800;
+  font-size: xx-large;
+}
+
+.landing_founders .box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+} */
+
+.landing_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+}

@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.navbar_text {
+    font-size: larger;
+    font-family: sans-serif;
+    color: #3a3535;
+}
+
+.navbar_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.navbar_nav a {
+    text-decoration: none;
+    color: #3a3535;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.navbar_nav a:hover {
+    color: #27bbf6;
+    transform: scale(1.1);
+  transition: 0.5s ease;
+}

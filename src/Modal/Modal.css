@@ -1,0 +1,126 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  width: 800px;
+  max-height: fit-content;
+  overflow: hidden;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: red;
+  width: 10%;
+}
+
+.modal-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-left img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+.modal-right {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.modal-right h2 {
+  margin: 0 0 10px;
+}
+
+.modal-right p {
+  margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+    width: 85%;
+    max-width: 90%;
+  }
+
+  .modal-left,
+  .modal-right {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .modal-left {
+    margin-bottom: 10px;
+    height: 300px;
+  }
+
+  .modal-right {
+    width: fit-content;
+  }
+
+  
+
+  .close-button {
+    top: 5px;
+    right: 5px;
+    font-size: 1.2em;
+    width: auto;
+    padding: 5px 10px;
+    z-index: 10000;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-left {
+    margin-bottom: 10px;
+  }
+  .modal-right h2 {
+    font-size: 1.5em;
+  }
+
+  .modal-right p {
+    font-size: 1em;
+  }
+
+  .close-button {
+    font-size: 1em;
+    padding: 5px;
+    z-index: 1000;
+  }
+}
